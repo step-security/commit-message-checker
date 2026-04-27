@@ -1,0 +1,19 @@
+[[IgnoredVulns]]
+id = "GHSA-2mjp-6q6p-2qxm"
+reason = "undici@5.29.0 via @actions/github - not exploitable; action only makes requests to GitHub API with controlled parameters"
+
+[[IgnoredVulns]]
+id = "GHSA-4992-7rv2-5pvq"
+reason = "undici@5.29.0 via @actions/github - not exploitable; action only makes requests to GitHub API with controlled parameters"
+
+[[IgnoredVulns]]
+id = "GHSA-g9mf-h72j-4rw9"
+reason = "undici@5.29.0 via @actions/github - not exploitable; action only makes requests to GitHub API with controlled parameters"
+
+[[IgnoredVulns]]
+id = "GHSA-v9p9-hfj2-hcw8"
+reason = "undici@5.29.0 via @actions/github - not exploitable; action only makes requests to GitHub API with controlled parameters"
+
+[[IgnoredVulns]]
+id = "GHSA-vrm6-8vpv-qv8q"
+reason = "undici@5.29.0 via @actions/github - not exploitable; action only makes requests to GitHub API with controlled parameters"
