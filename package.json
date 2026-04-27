@@ -48,7 +48,7 @@
     "@types/node": "^18.11.0",
     "@types/node-fetch": "^2.5.10",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.40.1",
+    "@typescript-eslint/parser": "^8.59.0",
     "@vercel/ncc": "^0.34.0",
     "eslint": "^8.25.0",
     "eslint-plugin-github": "^4.3.2",
