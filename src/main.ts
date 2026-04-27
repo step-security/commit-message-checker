@@ -2,6 +2,7 @@
  * This file is part of the "GS Commit Message Checker" Action for Github.
  *
  * Copyright (C) 2019-2022 by Gilbertsoft LLC (gilbertsoft.org)
+ * Copyright (c) 2026 StepSecurity
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
