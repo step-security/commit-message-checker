@@ -1,0 +1,36 @@
+name: "build-test"
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Set Node.js 24.x
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+      - name: Install
+        run: |
+          npm ci
+      - name: Build and Test
+        run: |
+          npm run all
+      - name: Verify dist files
+        run: |
+          # This fails when dist files are not up to date
+          git diff --exit-code
+  test: # make sure the action works on a clean machine without building
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./
+        with:
+          pattern: '(\[(BUGFIX|DOCS|FEATURE|TASK|feat|fix|chore)\] .+|^(feat|fix|chore|ci|docs|build|refactor|test|perf|style|revert)(\(.+\))?: .+)$'
+          error: 'Your first line has to contain a commit type like "[BUGFIX]" or "feat: description".'
+          checkAllCommitMessages: 'true'
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
